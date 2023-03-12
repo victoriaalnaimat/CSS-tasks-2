@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container {display: grid; font-size: 7px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 0.2fr 2.6fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "BOARDERS BOARDERS BOARDERS"
+                        "BOARDERS BOARDERS BOARDERS"
+                        "BOARDERS BOARDERS BOARDERS";
+                    }
+        .BOARDERS  {display: grid; border: 0.5px solid gray;
+            background-color: rgb(234, 233, 233);
+                    box-shadow: -2px -1px 30px 3px rgba(0,0,0,0.52);
+                    grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr;
+                    grid-template-rows: 0.2fr 0.1fr 2.4fr 0.2fr 2.1fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR"
+                        "MONDAY TUSEDAY WEDNSDAY THURSDAY- FRIDAY- WEEKEND-"
+                        "LIST1 LIST2 LIST3 LIST4 LIST5 LIST6"
+                        "THIS-MONTH THIS-MONTH THIS-MONTH NEXT-MONTH NEXT-MONTH NEXT-MONTH"
+                        "THIS-M-LIST THIS-M-LIST THIS-M-LIST NEXT-M-LIST NEXT-M-LIST NEXT-M-LIST";
+                    grid-area: BOARDERS;
+                    }
+        div { border: 2px solid rgb(255, 255, 255);}
+        .NAVBAR { grid-area: NAVBAR; background-color: rgb(150, 149, 149);}
+        .MONDAY { grid-area: MONDAY; }
+        .TUSEDAY { grid-area: TUSEDAY; }
+        .WEDNSDAY { grid-area: WEDNSDAY;background-color: rgb(255, 210, 127);}
+        .THURSDAY- { grid-area: THURSDAY-; }
+        .FRIDAY- { grid-area: FRIDAY-; }
+        .WEEKEND- { grid-area: WEEKEND-; }
+        .LIST1 { grid-area: LIST1; }
+        .LIST2 { grid-area: LIST2; }
+        .LIST3 { grid-area: LIST3;background-color: rgb(255, 210, 127);}
+        .LIST4 { grid-area: LIST4; }
+        .LIST5 { grid-area: LIST5; }
+        .LIST6 { grid-area: LIST6; }
+        .THIS-MONTH { grid-area: THIS-MONTH; }
+        .NEXT-MONTH { grid-area: NEXT-MONTH; }
+        .THIS-M-LIST { grid-area: THIS-M-LIST; }
+        .NEXT-M-LIST { grid-area: NEXT-M-LIST; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="BOARDERS">
+            <div class="NAVBAR">
+                <p></p>
+            </div>
+            <div class="MONDAY">
+                <p>MONDAY</p>
+            </div>
+            <div class="TUSEDAY">
+                <p>TUSEDAY</p>
+            </div>
+            <div class="WEDNSDAY">
+                    <p>WEDNSDAY</p>
+                    </div>
+            <div class="THURSDAY-">
+                    <p>THURSDAY</p>
+                    </div>
+            <div class="FRIDAY-">
+                    <p>FRIDAY</p>
+                    </div>
+            <div class="WEEKEND-">
+                    <p>WEEKEND</p>
+                    </div>
+            <div class="LIST1">
+                <ul style="list-style:circle;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+            </div>
+            <div class="LIST2">
+                <ul style="list-style:circle;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </div>
+            <div class="LIST3">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio officia distinctio deleniti, praesentium accusantium sunt eveniet, nulla magni natus perferendis cupiditate doloribus repellat vero deserunt voluptatibus ut necessitatibus inventore vel?
+            </div>
+            <div class="LIST4">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </div>
+            <div class="LIST5">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </div>
+            <div class="LIST6">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                </ul>
+            </div>
+            <div class="THIS-MONTH">
+                <p>THIS-MONTH</p>
+            </div>
+            <div class="NEXT-MONTH">
+                <p>NEXT-MONTH</p>
+            </div>
+            <div class="THIS-M-LIST">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+            <div class="NEXT-M-LIST">
+                <ul style="list-style-type: style dash;;">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
