@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {margin-top: 10px;}
+        body {text-align: center ; color: white;}
+        .container {display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-auto-columns: 1fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:"r1""r2""r3""r4""r5""r6""r7";}
+
+        .r1 { grid-area: r1;height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}
+        .r2 {   display: grid;
+                grid-template-columns: 1.5fr 0.5fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 0px;
+                grid-auto-flow: row;
+                grid-template-areas:
+                    "rr1 rr2 rr2"
+                    "rr1 rr2 rr2"
+                    "rr1 rr2 rr2";
+                grid-area: r2;}
+        .rr1 { grid-area: rr1; }
+        .rr2 { grid-area: rr2; }
+        .r3 {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "r31 r32 r33"
+                "r31 r32 r33"
+                "r31 r32 r33";
+            grid-area: r3;}
+        .r31 { grid-area: r31; }
+        .r32 { grid-area: r32; }
+        .r33 { grid-area: r33; }
+        .r4 {  display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "r41 r42 r43 r44"
+                "r41 r42 r43 r44"
+                "r41 r42 r43 r44";
+            grid-area: r4;
+        }
+        
+        .r41 { grid-area: r41; }
+        
+        .r42 { grid-area: r42; }
+        
+        .r43 { grid-area: r43; }
+        
+        .r44 { grid-area: r44; }
+        
+        .r5 {  display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 0px 0px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "r51 r52 r53 r54 r55"
+            "r51 r52 r53 r54 r55"
+            "r51 r52 r53 r54 r55";
+          grid-area: r5;}
+        .r51 { grid-area: r51; }        
+        .r52 { grid-area: r52; }        
+        .r53 { grid-area: r53; }        
+        .r54 { grid-area: r54; }        
+        .r55 { grid-area: r55; }        
+        .r6 {display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "r61 r62 r63 r64 r65 r66"
+                "r61 r62 r63 r64 r65 r66"
+                "r61 r62 r63 r64 r65 r66";
+            grid-area: r6;}        
+        .r61 { grid-area: r61; }        
+        .r62 { grid-area: r62; }        
+        .r63 { grid-area: r63; }        
+        .r64 { grid-area: r64; }        
+        .r65 { grid-area: r65; }        
+        .r66 { grid-area: r66; }        
+        .r7 { grid-area: r7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="r1"><p>60 GS is starter kit for the CSS Grid.</p></div>
+        <div class="r2">
+            <div class="rr1"><p>1</p></div>
+            <div class="rr2"><p>2</p>></div>
+        </div>
+        <div class="r3">
+            <div class="r31"><p>1</p>></div>
+            <div class="r32"><p>2</p></div>
+            <div class="r33"><p>3</p></div>
+        </div>
+        <div class="r4">
+            <div class="r41"><p>1</p></div>
+            <div class="r42"><p>2</p></div>
+            <div class="r43"><p>3</p></div>
+            <div class="r44"><p>5</p></div>
+        </div>
+        <div class="r5">
+            <div class="r51"><p>1</p></div>
+            <div class="r52"><p>2</p></div>
+            <div class="r53"><p>3</p></div>
+            <div class="r54"><p>4</p></div>
+            <div class="r55"><p>5</p></div>
+        </div>
+        <div class="r6">
+            <div class="r61"><p>1</p></div>
+            <div class="r62"><p>2</p></div>
+            <div class="r63"><p>3</p></div>
+            <div class="r64"><p>4</p></div>
+            <div class="r65"><p>5</p></div>
+            <div class="r66"><p>6</p></div>
+        </div>
+        <div class="r7">Why 60? <br> Because the number 60 id devidable by 2,3,4,5 and 6.</div>
+      </div>
+</body>
+</html>
