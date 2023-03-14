@@ -8,7 +8,7 @@
     <style>
         p {margin-top: 10px;}
         body {text-align: center ; color: white;}
-        .container {display: grid;
+        .container {display: grid; width: 50%; margin-left: 25%;
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                     grid-auto-columns: 1fr;
@@ -54,29 +54,27 @@
             grid-area: r4;
         }
         
-        .r41 { grid-area: r41; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}
-        
-        .r42 { grid-area: r42; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}
-        
-        .r43 { grid-area: r43; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}
-        
+        .r41 { grid-area: r41; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
+        .r42 { grid-area: r42; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
+        .r43 { grid-area: r43; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
         .r44 { grid-area: r44; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}
-        
-        .r5 {  display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          gap: 5px 5px;
-          grid-auto-flow: row;
-          grid-template-areas:
-            "r51 r52 r53 r54 r55"
-            "r51 r52 r53 r54 r55"
-            "r51 r52 r53 r54 r55";
-          grid-area: r5;}
+
+        .r5 {display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5px 5px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "r51 r52 r53 r54 r55"
+                "r51 r52 r53 r54 r55"
+                "r51 r52 r53 r54 r55";
+            grid-area: r5;}
         .r51 { grid-area: r51; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
         .r52 { grid-area: r52; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
         .r53 { grid-area: r53; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
         .r54 { grid-area: r54; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
-        .r55 { grid-area: r55; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;}        
+        .r55 { grid-area: r55; height: 40px;;background-color: rgb(70,178,253);border-radius: 10px 10px 10px 10px;} 
+
         .r6 {display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
