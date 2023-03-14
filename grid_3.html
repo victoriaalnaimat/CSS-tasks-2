@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    grid-auto-columns: 1fr;
+                    gap: 7px 7px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "part3 part2 part4"
+                        "part7 part8 part5";}
+        .part3 { grid-area: part3; }
+        .part2 { grid-area: part2; }
+        .part4 { grid-area: part4; }
+        .part7 { grid-area: part7; }
+        .part8 { grid-area: part8; }
+        .part5 { grid-area: part5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="part3"><img src="img1.jpg" alt="1"></div>
+        <div class="part2"><img src="img2.jpg" alt="1"></div>
+        <div class="part4"><img src="img3.jpg" alt="1"></div>
+        <div class="part7"><img src="img4.jpg" alt="1"></div>
+        <div class="part8"><img src="img5.jpg" alt="1"></div>
+        <div class="part8"><img src="img6.jpg" alt="1"></div>
+        <div class="part8"><img src="img7.jpg" alt="1"></div>
+        <div class="part8"><img src="img8.jpg" alt="1"></div>
+        <div class="part8"><img src="img9.jpg" alt="1"></div>
+    </div>
+</body>
+</html>
