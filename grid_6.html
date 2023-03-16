@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 1.8fr 1fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;}
+        .box { grid-area: 1 / 1 / 4 / 4; background-color: brown;}
+        .pic { grid-area: 1 / 1 / 4 / 2; background-color: rgb(240, 45, 45); }
+        .text1 { grid-area: 1 / 2 / 2 / 4; background-color: rgb(48, 181, 103); }
+        .text2 { grid-area: 2 / 2 / 3 / 4; background-color: rgb(57, 189, 255); }
+        .user { grid-area: 3 / 2 / 4 / 4; background-color: rgb(255, 93, 204); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">gfds</div>
+        <div class="pic">nf</div>
+        <div class="text1">hnyf</div>
+        <div class="text2">jny</div>
+        <div class="user">jyt</div>
+      </div>
+</body>
+</html>
