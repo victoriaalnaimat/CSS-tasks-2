@@ -7,12 +7,12 @@
     <title>Document</title>
     <style>
         body {display: flex; gap: 20px;}
-        .container {display: grid; width: 450px; height: 250px;border: 1px solid gray;
-                    grid-template-columns: 1fr 1fr 1fr;
+        .main {display: grid; width: 450px; height: 250px;border: 1px solid gray;
+                    grid-template-columns: 1.4fr 0.6fr 1fr;
                     grid-template-rows: 0.2fr 1.8fr 1fr;
                     gap: 0px 0px;
                     grid-auto-flow: row;}
-        .content {  display: grid; width: 300px; height: 250px;line-height: 3px;
+        .content {  display: grid;line-height: 3px; background-color: aqua;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 0.2fr 2.3fr 0.5fr;
                     gap: 0px 0px;
@@ -22,11 +22,11 @@
                         "text2 text2 text2"
                         "text3 text3 text3";
                     grid-area: 1 / 2 / 4 / 4; }
-        .pic { grid-area: 1 / 1 / 4 / 4; width: 40%; height: 250px;}
+        .pic { grid-area: 1 / 1 / 4 / 4;width: 100%;; background-color: brown; height: 250px;}
         .text1 { grid-area: text1; display: flex; }
         .text2 { grid-area: text2; line-height: 20px;font-size: smaller;}
         .text3 { grid-area: text3; display: flex;line-height: 20px;font-size: smaller;}
-        img.big { width: 83%; height: 250px;}
+        img.big { width: 50%; height: 250px;}
         img.small {width: 20px; height: 20px; margin-top: 5px;}
         img.small-2 {width: 40px; height: 40px; margin-top: 20px;}
         p.small {font-size: smaller;}
@@ -34,7 +34,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="main">
             <div class="pic"><img class="big" src="m1.jpg" alt="m1"></div>
             <div class="content">
                 <div class="text1">
@@ -52,8 +52,8 @@
                 </div>
             </div>
     </div>
-    <div class="container">
-            <div class="pic"><img class="big" src="m1.jpg" alt="m1"></div>
+    <div class="main">
+            <div class="pic"><img class="big" src="m2.jpg" alt="m1"></div>
             <div class="content">
                 <div class="text1">
                     <img class="small" src="lock.jpg" alt="m1">
@@ -65,13 +65,13 @@
                         Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                 </div>
                 <div class="text3">
-                    <img class="small-2" src="user1.jpg" alt="m1">
+                    <img class="small-2" src="user2.jpg" alt="m1">
                     <p class="small-2">John Smith <br>Aug 18</p>
                 </div>
             </div>
     </div>
-    <div class="container">
-            <div class="pic"><img class="big" src="m1.jpg" alt="m1"></div>
+    <div class="main">
+            <div class="pic"><img class="big" src="m3.jpg" alt="m1"></div>
             <div class="content">
                 <div class="text1">
                     <img class="small" src="lock.jpg" alt="m1">
@@ -83,7 +83,7 @@
                         Maiores et perferendis eaque, exercitationem praesentium nihil.</p>
                 </div>
                 <div class="text3">
-                    <img class="small-2" src="user1.jpg" alt="m1">
+                    <img class="small-2" src="user3.jpg" alt="m1">
                     <p class="small-2">John Smith <br>Aug 18</p>
                 </div>
             </div>
