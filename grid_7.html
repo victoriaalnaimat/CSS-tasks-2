@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.2fr 1.8fr;
+                    grid-auto-columns: 1fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "header"
+                        "the-body";}
+        .header { grid-area: header; }
+        .the-body {  display: grid;
+                    grid-template-columns: 1.5fr 0.5fr;
+                    grid-template-rows: 1fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "text side-bar";
+                    grid-area: the-body;}
+        .side-bar { grid-area: side-bar; }
+        .text {  display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 0.6fr 1.4fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "text-1"
+                        "boxes";
+                    grid-area: text;}
+        .text-1 { grid-area: text-1; }
+        .boxes { grid-area: boxes; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="the-body">
+            <div class="side-bar"></div>
+            <div class="text">
+                <div class="text-1"></div>
+                <div class="boxes"></div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
