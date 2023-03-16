@@ -8,11 +8,11 @@
     <style>
         body {display: flex; gap: 20px;}
         .main {display: grid; width: 450px; height: 250px;border: 1px solid gray;
-                    grid-template-columns: 1.4fr 0.6fr 1fr;
+                    grid-template-columns: 1fr 1fr;
                     grid-template-rows: 0.2fr 1.8fr 1fr;
                     gap: 0px 0px;
                     grid-auto-flow: row;}
-        .content {  display: grid;line-height: 3px; background-color: aqua;
+        .content {  display: grid;line-height: 3px;
                     grid-template-columns: 1fr 1fr 1fr;
                     grid-template-rows: 0.2fr 2.3fr 0.5fr;
                     gap: 0px 0px;
@@ -22,11 +22,11 @@
                         "text2 text2 text2"
                         "text3 text3 text3";
                     grid-area: 1 / 2 / 4 / 4; }
-        .pic { grid-area: 1 / 1 / 4 / 4;width: 100%;; background-color: brown; height: 250px;}
-        .text1 { grid-area: text1; display: flex; }
+        .pic { grid-area: 1 / 1 / 4 / 4;width: 50%;; background-color: brown; height: 250px;}
+        .text1 { grid-area: text1; display: flex;}
         .text2 { grid-area: text2; line-height: 20px;font-size: smaller;}
         .text3 { grid-area: text3; display: flex;line-height: 20px;font-size: smaller;}
-        img.big { width: 50%; height: 250px;}
+        img.big { width: 100%; height: 250px;}
         img.small {width: 20px; height: 20px; margin-top: 5px;}
         img.small-2 {width: 40px; height: 40px; margin-top: 20px;}
         p.small {font-size: smaller;}
