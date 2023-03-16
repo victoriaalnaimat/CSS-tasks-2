@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div class="container">
+    <title>Document</title>
+    <style>
+        .container {display: grid;width:1520px; height: 725px; background-color: rgb(70, 70, 108);
+                    grid-template-columns: 1.0fr 0.7fr 1.0fr;
+                    grid-template-rows: 1.0fr 1.0fr 0.4fr;
+                    gap: 0px 0px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                        "pic-big right-side right-side"
+                        "pic-big right-side right-side"
+                        "footer footer footer";}
+        .pic-big { grid-area: pic-big;background-color: rgb(149, 151, 27);width:760px; height: 700px;}
+        .right-side {   display: grid; width:760px; height: 700px; background-color: rgb(255, 0, 153);
+                        grid-template-columns: 0.2fr;
+                        grid-template-rows: 1fr;
+                        row-gap: 0px; column-gap: 0px;
+                        grid-auto-flow: row;
+                        grid-template-areas:
+                            "r1 r2"
+                            "r3 r4";
+                        grid-area: right-side;}
+        .r1 { grid-area: r1; background-color: brown; width:380px; height: 350px;}
+        .r2 { grid-area: r2; background-color: rgb(240, 159, 159); width:380px; height: 350px;}
+        .r3 { grid-area: r3; background-color: rgb(56, 165, 42); width:380px; height: 350px;}
+        .r4 { grid-area: r4; background-color: rgb(255, 59, 229); width:380px; height: 350px;}
+        .footer {   display: grid; width: 100%; height: 30px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 1fr 0.2fr;
+                    gap: 2px 20px;
+                    grid-auto-flow: row;
+                    grid-template-areas:
+                            "f1 f2 f3 f4"
+                            "f1 f2 f3 f4"
+                            "f1 f2 f3 f4";
+                    grid-area: footer;}
+        .f1 { grid-area: f1; background-color: rgb(231, 231, 231);width:100px; height: 20px; }
+        .f2 { grid-area: f2; background-color: rgb(152, 77, 77);width:100px; height: 20px;  }
+        .f3 { grid-area: f3; background-color: rgb(231, 231, 231);width:100px; height: 20px; }
+        .f4 { grid-area: f4; background-color: rgb(176, 29, 29);width:100px; height: 20px;  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic-big"><img style="width:760px; height: 700px;" src="i1.jpg" alt="image"></div>
+        <div class="right-side">
+            <div class="r1"><img style=" width:380px; height: 350px;" src="ii1.jpg" alt="image"></div>
+            <div class="r2"><img style=" width:380px; height: 350px;" src="ii2.jpg" alt="image"></div>
+            <div class="r3"><img style=" width:380px; height: 350px;" src="ii3.jpg" alt="image"></div>
+            <div class="r4"><img style=" width:380px; height: 350px;" src="ii4.jpg" alt="image"></div>
+        </div>
+        <div class="footer">
+            <div class="f1">mfgm</div>
+            <div class="f2">ngf</div>
+            <div class="f3">ngf</div>
+            <div class="f4">ngf</div>
+        </div>
+    </div>
+</body>
+</html>
