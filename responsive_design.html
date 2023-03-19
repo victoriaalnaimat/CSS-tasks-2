@@ -17,9 +17,9 @@
                             "white-header"
                             "the-contents"
                             "the-menu";}
-        .grey-header { grid-area: grey-header; background-color: #e0dbdb;display: flex;gap: 50%;}
-        .white-header { grid-area: white-header; }
-        .the-contents { display: grid;
+        .grey-header { grid-area: grey-header; background-color: #ede8e8;display: flex;gap: 50%;width: 100%; height: 100%;}
+        .white-header { grid-area: white-header; background-color: white; text-align:center; display: flex; font-family: arial;}
+        .the-contents { display: grid; background-color: rgb(118, 102, 149);
                         grid-template-columns: 0.5fr 1.5fr;
                         grid-template-rows: 1fr;
                         gap: 0px 0px;
@@ -27,8 +27,8 @@
                         grid-template-areas:
                             "side-bar sub-contents";
                         grid-area: the-contents;}
-        .side-bar { grid-area: side-bar; }
-        .sub-contents {  display: grid;
+        .side-bar { grid-area: side-bar;  background-color: rgb(63, 193, 102);}
+        .sub-contents {  display: grid; background-color: rgb(120, 11, 11);
                         grid-template-columns: 1fr;
                         grid-template-rows: 0.3fr 1.7fr;
                         gap: 0px 0px;
@@ -37,11 +37,20 @@
                             "search-bar"
                             "advertisement";
                         grid-area: sub-contents;}
-        .search-bar { grid-area: search-bar; }
+        .search-bar { grid-area: search-bar; display: flex;gap:10px;width: 450px;}
         .advertisement { grid-area: advertisement; }
-        .the-menu { grid-area: the-menu; }
-        .right {display: flex; gap: 3px;}
-        .left {display: flex; gap: 3px;}
+        .the-menu { grid-area: the-menu;  background-color: rgb(219, 68, 141);}
+        .right {display: flex; gap: 10px;}
+        .left {display: flex; gap: 1px; margin-right: 5px;}
+        li { display: inline; padding: 10px;}
+        hr { height:30px}
+        .white-right-icons {margin-left: 28%; display: flex; gap: 5px;}
+        .search-container button {  float: right;padding: 5.5px;
+                                    margin-right: 16px;background: #7fad39;
+                                    color: white;font-family: arial black;
+                                    font-size: 12px;border: none;cursor: pointer;}
+        .search-container button:hover {background: #7fad39;}
+        input[type=text] {padding: 7px; font-size: 13px;border: none;}
     </style>
 </head>
 <body>
@@ -53,20 +62,61 @@
                 <p>Free shipping for all order of $99</p>
             </div>
             <div class="left">
-                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.email.png" alt="email">
-                <p>gdfhthtgd@gmil.com</p><hr>
-                <p>jyt</p>
+                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.Facebook.png" alt="email">
+                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.twitter.png" alt="email">
+                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.linkedin.png" alt="email">
+                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.pinterest.png" alt="email">
+                <hr>
+                <img style="width: 20px;height:fit-content; padding: 7px; margin-left: 10px; margin-top: 7px;" src="re.america.png" alt="email">
+                <form action="#">
+                    <label for="language"></label>
+                    <select style="background-color: rgba(255, 255, 255, 0); border: none; margin-top: 15px; font-family: 'Courier New', Courier, monospace; font-weight: bolder;" name="language" id="language">
+                        <option value="english">English</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="russian">Russian</option>
+                    </select>
             </div>
         </div>
-        <div class="white-header">vht</div>
+        <div class="white-header">
+            <div style="margin-left: 32%;">
+            <ul style="list-style: none; display: inline">
+                <li style="color: #7fad39; font-weight:900;">Home</li>
+                <li style="color: black; font-weight:900;">Shop</li>
+                <li style="color: black; font-weight:900;">Pages</li>
+                <li style="color: black; font-weight:900;">Blog</li>
+                <li style="color: black; font-weight:900;">Contact</li>
+            </ul>
+            </div>
+            <div class="white-right-icons">
+                <img style="width: 27px;height:30px;margin-left: 10px;" src="re.heart.jpg" alt="email">
+                <img style="width: 30px;height:30px;margin-left: 10px;" src="re.basket.jpg" alt="email">
+                <p>item:<span style="font-weight: 850;font-size: smaller;">$150.00</span></p>
+            </div>
+        </div>
         <div class="the-contents">
             <div class="side-bar">vvdff</div>
             <div class="sub-contents">
-                <div class="search-bar">vfdvvfd/div>
+                <div class="search-bar">
+                    <form action="#">
+                        <label for="all-catigories"></label>
+                        <select style="background-color: rgba(255, 255, 255, 0); border: none; margin-top: -22px;margin-left: 10px;font-family:arial black" name="all-catigories" id="all-catigories">
+                            <option value="english">All Categories</option>
+                            <option value="arabic">Food</option>
+                            <option value="spanish">Cake</option>
+                            <option value="russian">Bavrages</option>
+                        </select><hr>
+                        <div class="search-container">
+                            <form action="#">
+                                <input type="text" placeholder="What do you need?" name="search">
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                </div>
                 <div class="advertisement">vfd</div>
             </div>
         </div>
         <div class="the-menu">hfgt</div>
-      </div>
+    </div>
 </body>
 </html>
