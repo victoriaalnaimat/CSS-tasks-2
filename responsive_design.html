@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resonsive Website</title>
     <style>
-        .container {    display: grid; background-color: rgb(149, 102, 102);
+        .container {    display: grid;
                         grid-template-columns: 1fr;
                         grid-template-rows: 0.1fr 0.3fr 2.7fr 1fr;
                         grid-auto-columns: 1fr;
@@ -17,9 +17,9 @@
                             "white-header"
                             "the-contents"
                             "the-menu";}
-        .grey-header { grid-area: grey-header; background-color: #ede8e8;display: flex;gap: 50%;width: 100%; height: 100%;}
+        .grey-header { grid-area: grey-header; background-color: #ede8e8;display: flex;width: 100%; height: 100%;}
         .white-header { grid-area: white-header; background-color: white; text-align:center; display: flex; font-family: arial;}
-        .the-contents { display: grid; background-color: rgb(118, 102, 149);
+        .the-contents { display: grid;
                         grid-template-columns: 0.5fr 1.5fr;
                         grid-template-rows: 1fr;
                         gap: 0px 0px;
@@ -28,7 +28,7 @@
                             "side-bar sub-contents";
                         grid-area: the-contents;}
         .side-bar { grid-area: side-bar;  background-color: rgb(63, 193, 102);}
-        .sub-contents {  display: grid; background-color: rgb(120, 11, 11);
+        .sub-contents {  display: grid;
                         grid-template-columns: 1fr;
                         grid-template-rows: 0.3fr 1.7fr;
                         gap: 0px 0px;
@@ -37,20 +37,20 @@
                             "search-bar"
                             "advertisement";
                         grid-area: sub-contents;}
-        .search-bar { grid-area: search-bar; display: flex;gap:10px;width: 450px;}
-        .advertisement { grid-area: advertisement; }
+        .search-bar { grid-area: search-bar; display: flex;gap:10px;width: 450px; height: 39px;margin-left: 57px;border: 1px solid rgb(174, 172, 172); background-color: white;}
+        .advertisement { grid-area: advertisement; background-color: rgb(248, 244, 244);margin-right: 5%; margin-top: 20px;margin-left: 5%; margin-bottom: 30px;}
         .the-menu { grid-area: the-menu;  background-color: rgb(219, 68, 141);}
         .right {display: flex; gap: 10px;}
-        .left {display: flex; gap: 1px; margin-right: 5px;}
+        .left {display: flex; gap: 1px; margin-right: 5px;margin-left: 50%;}
         li { display: inline; padding: 10px;}
         hr { height:30px}
-        .white-right-icons {margin-left: 28%; display: flex; gap: 5px;}
-        .search-container button {  float: right;padding: 5.5px;
-                                    margin-right: 16px;background: #7fad39;
+        .white-right-icons {margin-left: 25%; display: flex; gap: 5px;}
+        .search-container button {  float: right;padding: 5.5px;height: 40px;width: ;
+                                    margin-right: -57px;background: #7fad39;
                                     color: white;font-family: arial black;
                                     font-size: 12px;border: none;cursor: pointer;}
-        .search-container button:hover {background: #7fad39;}
-        input[type=text] {padding: 7px; font-size: 13px;border: none;}
+        .search-container button:hover {background: #7fad39;margin-top: 10px;}
+        input[type=text] {padding: 7px; font-size: 13px;border: none;border-bottom: 1px solid #ffffff;height: 26px;margin-left: -5px;}
     </style>
 </head>
 <body>
@@ -100,20 +100,25 @@
                 <div class="search-bar">
                     <form action="#">
                         <label for="all-catigories"></label>
-                        <select style="background-color: rgba(255, 255, 255, 0); border: none; margin-top: -22px;margin-left: 10px;font-family:arial black" name="all-catigories" id="all-catigories">
+                        <select style="background-color: rgb(255, 255, 255); border: none; margin-top: 5px;margin-left: 10px;font-family:arial black ;  height: 26px;" name="all-catigories" id="all-catigories">
                             <option value="english">All Categories</option>
                             <option value="arabic">Food</option>
                             <option value="spanish">Cake</option>
                             <option value="russian">Bavrages</option>
-                        </select><hr>
+                        </select><hr style="height: 15px; color: gray;">
                         <div class="search-container">
                             <form action="#">
                                 <input type="text" placeholder="What do you need?" name="search">
                                 <button type="submit">Submit</button>
                             </form>
                         </div>
+                        <div style="display: flex; margin-left: 200px;margin-top: -20px;" class="call">
+                            <img style="width: 60px;height:60px;" src="re.call.jpg" alt="email">
+                        </div>
                 </div>
-                <div class="advertisement">vfd</div>
+                <div class="advertisement">
+                    <img style="width: 600px;height:400px;margin-top: 25px;float: right; margin-right: 20px;" src="re.adv.jpg" alt="email">
+                </div>
             </div>
         </div>
         <div class="the-menu">hfgt</div>
