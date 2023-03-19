@@ -27,7 +27,7 @@
                         grid-template-areas:
                             "side-bar sub-contents";
                         grid-area: the-contents;}
-        .side-bar { grid-area: side-bar;  background-color: rgb(63, 193, 102);}
+        .side-bar { grid-area: side-bar; border: #92948e solid;}
         .sub-contents {  display: grid;
                         grid-template-columns: 1fr;
                         grid-template-rows: 0.3fr 1.7fr;
@@ -37,16 +37,16 @@
                             "search-bar"
                             "advertisement";
                         grid-area: sub-contents;}
-        .search-bar { grid-area: search-bar; display: flex;gap:10px;width: 450px; height: 39px;margin-left: 57px;border: 1px solid rgb(174, 172, 172); background-color: white;}
-        .advertisement { grid-area: advertisement; background-color: rgb(248, 244, 244);margin-right: 5%; margin-top: 20px;margin-left: 5%; margin-bottom: 30px;}
-        .the-menu { grid-area: the-menu;  background-color: rgb(219, 68, 141);}
+        .search-bar { grid-area: search-bar; display: flex;gap:10px;width: 550px; height: 39px;margin-left: 57px;background-color: white;border: #92948e 1px solid;}
+        .advertisement { grid-area: advertisement; background-color: rgb(248, 244, 244);margin-right: 13.5%; margin-top: -23px;margin-left: 5%;height: fit-content;}
+        .the-menu { grid-area: the-menu; background-color: rgb(248, 244, 244); margin-top: -97px;}
         .right {display: flex; gap: 10px;}
         .left {display: flex; gap: 1px; margin-right: 5px;margin-left: 50%;}
-        li { display: inline; padding: 10px;}
+        li.list { display: inline; padding: 10px;}
         hr { height:30px}
-        .white-right-icons {margin-left: 25%; display: flex; gap: 5px;}
-        .search-container button {  float: right;padding: 5.5px;height: 40px;width: ;
-                                    margin-right: -57px;background: #7fad39;
+        .white-right-icons {margin-left: 25%; display: flex; gap: 5px;margin-top: 10px;}
+        .search-container button {  float: right;padding: 5.5px;height: 40px;width: 72px;
+                                    margin-right: -217px;background: #7fad39;
                                     color: white;font-family: arial black;
                                     font-size: 12px;border: none;cursor: pointer;}
         .search-container button:hover {background: #7fad39;margin-top: 10px;}
@@ -79,23 +79,31 @@
             </div>
         </div>
         <div class="white-header">
-            <div style="margin-left: 32%;">
-            <ul style="list-style: none; display: inline">
-                <li style="color: #7fad39; font-weight:900;">Home</li>
-                <li style="color: black; font-weight:900;">Shop</li>
-                <li style="color: black; font-weight:900;">Pages</li>
-                <li style="color: black; font-weight:900;">Blog</li>
-                <li style="color: black; font-weight:900;">Contact</li>
+            <div style="margin-left: 25.5%;">
+            <ul style="list-style: none; display: flex">
+                <li class="list" style="color: #7fad39; font-weight:900;">Home</li>
+                <li class="list" style="color: black; font-weight:900;">Shop</li>
+                <li class="list" style="color: black; font-weight:900;">Pages</li>
+                <li class="list" style="color: black; font-weight:900;">Blog</li>
+                <li class="list" style="color: black; font-weight:900;">Contact</li>
             </ul>
             </div>
             <div class="white-right-icons">
-                <img style="width: 27px;height:30px;margin-left: 10px;" src="re.heart.jpg" alt="email">
-                <img style="width: 30px;height:30px;margin-left: 10px;" src="re.basket.jpg" alt="email">
-                <p>item:<span style="font-weight: 850;font-size: smaller;">$150.00</span></p>
+                <img style="width: 30px;height:32px;margin-left: 10px;" src="re.heart.jpg" alt="email">
+                <img style="width: 30px;height:32px;margin-left: 10px;" src="re.basket.jpg" alt="email">
+                <p style="margin-left: 7px;">item:<span style="font-weight: 850;font-size: smaller;">$150.00</span></p>
             </div>
         </div>
         <div class="the-contents">
-            <div class="side-bar">vvdff</div>
+            <div style="border: 1px solid rgb(174, 172, 172); margin-left: 52px;margin-bottom: 254px;" class="side-bar">
+                    <p style="background-color: #7fad39; color: white; font-family: arial black;text-align: center;">All Departments</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+                    <p style="font-family: arial;padding: 7px;text-align: center;">lorem</p>
+            </div>
             <div class="sub-contents">
                 <div class="search-bar">
                     <form action="#">
@@ -112,12 +120,19 @@
                                 <button type="submit">Submit</button>
                             </form>
                         </div>
-                        <div style="display: flex; margin-left: 200px;margin-top: -20px;" class="call">
-                            <img style="width: 60px;height:60px;" src="re.call.jpg" alt="email">
+                        <div style="display: flex; margin-left: 397px;margin-top: -20px;" class="call">
+                            <img style="width: 73px;height:73px;" src="re.call.jpg" alt="email">
+                            <div style="font-size: smaller;width: 154px; margin-top: 10px;">
+                                <p><strong>+60464646</strong><br>Support 24/7 hours</p>
+                            </div>
                         </div>
                 </div>
                 <div class="advertisement">
-                    <img style="width: 600px;height:400px;margin-top: 25px;float: right; margin-right: 20px;" src="re.adv.jpg" alt="email">
+                    <h2 style="margin-left: 84px;margin-top: 124px;position: absolute; color: #7fad39;">Fruit Fresh</h2>
+                    <h1 style="margin-left: 84px;margin-top: 152px;position: absolute; font-weight: bolder;font-size: 34px;">Vegetables<br>100% Organic</h1>
+                    <h2 style="margin-left: 84px;margin-top: 234px;position: absolute; color: #92948e; font-size: 17px;">Free pickup and delivary available</h2>
+                    <h2 style="margin-left: 84px;margin-top: 274px;position: absolute; color: #ffffff; font-size: 23px;padding: 3px;;background-color: #7fad39;">Shop Now</h2>
+                    <img style="width: 600px;height:364px;margin-top: 15px;float: right; margin-right: 20px;margin-bottom: 10px;" src="re.adv.jpg" alt="email">
                 </div>
             </div>
         </div>
