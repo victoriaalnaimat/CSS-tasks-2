@@ -8,7 +8,7 @@
     <style>
         .container {  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1.3fr 0.5fr 1.5fr 0.3fr 1.8fr 1.2fr;
+  grid-template-rows: 0.1fr 0.3fr 0.3fr 0.5fr 0.2fr 0.1fr 0.1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -20,12 +20,12 @@
     "gallery"
     "footer";}
 .header { grid-area: header; }
-.big-image { grid-area: big-image; background-color: rgb(255,223,161);margin-top: 45px;position: absolute;width: 100%;}
+.big-image { grid-area: big-image; background-color: rgb(255,223,161);width: 90%;display: flex;height: 400px;justify-content: center;}
 .statistics { grid-area: statistics; text-align: center;}
-.bee { grid-area: bee; text-align: center; display: flex;justify-content: center;margin-top: 10px;}
-.orange-text { grid-area: orange-text; }
-.gallery { grid-area: gallery; }
-.footer { grid-area: footer; }
+.bee { grid-area: bee; text-align: center; display: flex;justify-content: center;height: fit-content;}
+.orange-text { grid-area: orange-text; text-align: center;font-weight: bolder; color: white; background-color: #ff8650;height: fit-content;}
+.gallery { grid-area: gallery;text-align: center;height: 250px;margin-top: 20px;}
+.footer { grid-area: footer;background-color: black; color: white;text-align: center;}
 
 ul {list-style-type: none;margin: 0;padding: 0;
     overflow: hidden;background-color:rgb(0,173,188);}
@@ -63,11 +63,15 @@ li a:hover {border-bottom: 2px solid #ff8650;}
                     border: 2px solid #ffffff;"><a class="active" href="#about">Create</a></li>
             </ul>              
         </div>
-        <div class="big-image">
-            <img style="float: right;width: 50%;" src="re3.girl.jpg" alt="3">
-            <h1 style="font-size: 20px;margin-top: 40px;margin-left: 170px;">Lorem ipsum dolor sit, amet <br>consectetur .</h1>
-            <p style="font-size: 13px;margin-left: 170px;">Lorem ipsum dolor sit, amet consectetur .</p>
-            <p style="font-size: 10px;margin-left: 170px; background-color: rgb(85, 130, 165);color: white;width: fit-content; padding: 10px;border-radius: 10px;">Lorem</p>
+        <div style="width: 100%;" class="big-image">
+            <div style="margin-left: 10%;">
+                <h1 style="font-size: 20px;margin-top: 60px;margin-left: 70px;">Lorem ipsum dolor sit, amet <br>consectetur .</h1>
+                <p style="font-size: 13px;margin-left: 70px;">Lorem ipsum dolor sit, amet consectetur .</p>
+                <p style="font-size: 10px;margin-left: 70px; background-color: rgb(85, 130, 165);color: white;width: fit-content; padding: 10px;border-radius: 10px;">Lorem</p>
+            </div>
+            <div style="height: 400px; margin-right: -20%;">
+                <img style="width: 600px ; height: 400px;margin-right: -40px;" src="re3.girl.jpg" alt="3">
+            </div>
         </div>
         <div class="statistics">
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
@@ -80,27 +84,70 @@ li a:hover {border-bottom: 2px solid #ff8650;}
             </div>
         </div>
         <div class="bee">
-            <div style="background-color: rgb(89,202,211);width: 200px; margin: 5px;" class="bees-small">
+            <div style="background-color: rgb(89,202,211,0.646);width: 200px; margin: 5px;" class="bees-small">
                 <img style="height: 70px;width: 200px;" src="re3.bee1.jpg" alt="3">
                 <p style="font-size: 12px;margin: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptatibus, molestias autem, voluptatem odit quaerat repellendus nihil rerum, tenetur maxime ea dolorem. Laboriosam adipisci ipsum dolores cupiditate impedit ratione fugiat.</p>
             </div>
-                <div style="background-color: rgb(166,155,193);width: 200px; margin: 5px;" class="bees-small">
+                <div style="background-color: rgb(166,155,193,0.646);width: 200px; margin: 5px;" class="bees-small">
                 <img style="height: 70px;width: 200px;" src="re3.bee2.jpg" alt="3">
                 <p style="font-size: 12px;margin: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptatibus, molestias autem, voluptatem odit quaerat repellendus nihil rerum, tenetur maxime ea dolorem. Laboriosam adipisci ipsum dolores cupiditate impedit ratione fugiat.</p>
             </div>
-                <div style="background-color: rgb(89,185,220);width: 200px; margin: 5px;" class="bees-small">
+                <div style="background-color: rgb(89,185,220,0.646);width: 200px; margin: 5px;" class="bees-small">
                 <img style="height: 70px;width: 200px;" src="re3.bee3.jpg" alt="3">
                 <p style="font-size: 12px;margin: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptatibus, molestias autem, voluptatem odit quaerat repellendus nihil rerum, tenetur maxime ea dolorem. Laboriosam adipisci ipsum dolores cupiditate impedit ratione fugiat.</p>
             </div>
-                <div style="background-color: rgb(209,213,103);width: 200px; margin: 5px;" class="bees-small">
+                <div style="background-color: rgba(209, 213, 103, 0.646);width: 200px; margin: 5px;" class="bees-small">
                 <img style="height: 70px;width: 200px;" src="re3.bee4.jpg" alt="3">
                 <p style="font-size: 12px;margin: 20px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptatibus, molestias autem, voluptatem odit quaerat repellendus nihil rerum, tenetur maxime ea dolorem. Laboriosam adipisci ipsum dolores cupiditate impedit ratione fugiat.</p>
             </div>
             
         </div>
-        <div class="orange-text"></div>
-        <div class="gallery"></div>
-        <div class="footer"></div>
-      </div>
+        <div class="orange-text">
+            <h3>Over 242 million Code.org projects created!</h3>
+        </div>
+        <div class="gallery">
+                <img style="height: 170px;" src="img1.jpg" alt="3">
+                <img style="height: 170px;" src="img1.jpg" alt="3">
+                <img style="height: 170px;" src="img1.jpg" alt="3">
+                <img style="height: 170px;" src="img1.jpg" alt="3">
+                <img style="height: 170px;" src="img1.jpg" alt="3">
+        </div>
+        <div class="footer">
+            <div class="div-part8">
+                <div class="nav-footer">
+                    <div style="text-align: center; height: 50px;" class="nav1-footer">
+                        <ul>
+                            <li style=" padding: 10px;text-align: center;">Privacy Policy </li>
+                            <li style=" padding: 10px;text-align: center;">Cookie Notice</li>
+                            <li style=" padding: 10px;text-align: center;">About</li>
+                            <li style=" padding: 10px;text-align: center;">Partners </li>
+                            <li style=" padding: 10px;text-align: center;">  Blog </li>
+                            <li style=" padding: 10px;text-align: center;">Donate </li>
+                            <li style=" padding: 10px;text-align: center;"> Store</li>
+                            <li style=" padding: 10px;text-align: center;">Support </li>
+                            <li style=" padding: 10px;text-align: center;">  Terms</li>
+                        </ul>
+                    </div>
+                <div class="nav2-footer">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paraghraph-footer">
+                <p>
+                    © Code.org, 2023. Code.org®, the CODE logo and Hour of Code® are trademarks of Code.org.
+                    Built on GitHub from Microsoft 
+                </p>
+                <p>
+                    Powered by AWS
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
