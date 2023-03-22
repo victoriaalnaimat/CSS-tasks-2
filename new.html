@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        .up-container {
+            display: grid;
+            grid-template-columns:32% 32% 32%;
+            gap: 2%;
+            background-color: aliceblue;
+            height: 180px;
+            margin: 2% 0px ;
+            
+        }
+        .div1 {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: 49.5% 49.5%;
+            grid-template-rows: 49.5% 49.5%;
+            gap: 1%;
+            
+        }
+        .box1 {
+            background-color: white;
+            border-radius: 5px;
+        }
+      
+      
+        .box2 {
+            background-color: white;
+            border-radius: 5px;
+
+        }
+        .box3 {
+            background-color: white;
+            border-radius: 5px;
+
+        }
+        .box4 {
+            background-color: white;
+            border-radius: 5px;
+        }
+        .box1 , .box2 , .box3 , .box4 ,.box5,.box6,.box7,.box8 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .div2 {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: 49.5% 49.5%;
+            grid-template-rows: 49.5% 49.5%;
+            gap: 1%;
+        }
+        .box5 {
+            background-color: white;
+            border-radius: 5px;
+
+        }
+        .box6 {
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        .box7 {
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        .box8 {
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        .div3 {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-rows:42.5% 42.5% ;
+            row-gap: 15%;
+           
+        }
+        .box9 {
+            background-color: rgb(89, 240, 89);
+            border-radius: 5px;
+
+        }
+        .box10 {
+            background-color: rgb(54, 54, 255) ;
+            border-radius: 5px;
+            
+        }
+
+        .mid-container {
+            display: grid;
+            grid-template-columns: 49% 49%;
+            background-color: aliceblue;
+            gap: 2%;
+            height: 280px;
+            margin: 2% 0px ;
+
+        }
+        .div4 {
+            display: grid;
+            grid-template-rows: 15% 19% 19% 19% 24%;
+            gap: 1%;
+        }
+        .row1 {
+            background-color: white;
+            border-radius: 7px;
+        }
+        .para1 {
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+        .row2 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+        .row3 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+        .row4 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+        .row5 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+        .div5 {
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: 49% 49%;
+            grid-template-rows: 38% 20% 38%;
+            gap: 2%;
+            
+
+        }
+        .box01 {
+            border-radius: 7px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box02 {
+            border-radius: 7px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box03 {
+            border-radius: 7px;
+            background-color:rgb(237, 72, 105);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box04 {
+            border-radius: 7px;
+            background-color: rgb(110, 247, 110);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box05 {
+            border-radius: 7px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box06 {
+            border-radius: 7px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .bottom-container {
+            display: grid;
+            grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+            background-color: aliceblue;
+            gap: 2px;
+            height: 100px;
+        }
+        .div6 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div7 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .div8 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .div9 {
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        @media only screen and (max-width:1075px){
+            .up-container {
+            grid-template-columns:1fr;
+            grid-template-rows: auto auto auto auto;   
+        }  
+        .bottom-container {
+            grid-template-columns:1fr;
+            grid-template-rows: auto auto auto auto; 
+        } 
+        .bottom-container {
+            grid-template-columns:1fr;
+            grid-template-rows: auto auto auto auto; 
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="up-container">
+        <div class="div1">
+            <div class="box1"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box2"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box3"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box4"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+        </div>
+        <div class="div2">
+            <div class="box5"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box6"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box7"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+            <div class="box8"><span class="material-icons"> person</span><span class="text" style="font-weight: bold;font-size: xx-large;">10K</span></div>
+        </div>
+        <div class="div3">
+            <div class="box9"></div>
+            <div class="box10"></div>
+        </div>
+    </div>
+
+    <div class="mid-container">
+        <div class="div4">
+            <div class="row1"><p class="para1">Members performance</p></div>
+            <div class="row2"><img src="../sunday19-3-2023/1.jpg" alt="" style="border-radius: 100%; height: 35px;width: 35px;"><p>shirley Hoe</p></div>
+            <div class="row3"><img src="../sunday19-3-2023/1.jpg" alt="" style="border-radius: 100%; height: 35px;width: 35px;"><p>shirley Hoe</p></div>
+            <div class="row4"><img src="../sunday19-3-2023/1.jpg" alt="" style="border-radius: 100%; height: 35px;width: 35px;"><p>shirley Hoe</p></div>
+            <div class="row5"><img src="../sunday19-3-2023/1.jpg" alt="" style="border-radius: 100%; height: 35px;width: 35px;"><p>shirley Hoe</p></div>
+        </div>
+        <div class="div5">
+            <div class="box01">Total Subscription <br>7652</div>
+            <div class="box02">Total Subscription <br>7652</div>
+            <div class="box03">Total Subscription <br>7652</div>
+            <div class="box04">Total Subscription <br>7652</div>
+            <div class="box05">Total Subscription <br>7652</div>
+            <div class="box06">Total Subscription <br>7652</div>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <div class="div6">
+            <input type="range" id="vol" name="vol" min="0" max="50">
+          </div>
+        <div class="div7">
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </div>
+        <div class="div8">
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </div>
+        <div class="div9">
+            <input type="range" id="vol" name="vol" min="0" max="50">
+        </div>
+    </div>
+</body>
+</html>
